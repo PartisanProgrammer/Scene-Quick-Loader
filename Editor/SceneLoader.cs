@@ -1,4 +1,5 @@
-﻿using System;
+#if UNITY_EDITOR
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.SceneManagement;
@@ -187,3 +188,4 @@ public class SceneLoader : EditorWindow
         PlayerPrefs.Save();
     }
 }
+#endif
